@@ -89,6 +89,6 @@ pygame_screen = game_step()
 # Convert pygame surface to a NumPy array
 if pygame_screen:
     img = np.rot90(np.fliplr(array3d(pygame_screen)))
-    st.image(img, caption=f"Score: {score} | Level: {level}", use_column_width=True)
+    st.image(img, caption=f"Score: {score} | Level: {level}", use_container_width=True)
 else:
     st.write("**Game Over! Refresh to restart.**")
